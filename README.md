@@ -79,7 +79,7 @@ Your local Api adress = http://localhost:8080
 
 http://localhost:8080/user/ -> Returns all users saved on database. Returns [UserModel] as json.
 
-http://localhost:8080/user/nameFilter/userName -> Returns all objects which name property is userName. Returns [UserModel] as json.
+http://localhost:8080/user/nameFilter/ (Send name as parameter ([name: "blablaName"])) -> Returns all objects which name property is userName. Returns [UserModel] as json.
 
 http://localhost:8080/user/nameFilterQuery?name=userName -> Returns all objects which name property is userName with param in query. Returns [UserModel] as json.
 
