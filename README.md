@@ -58,9 +58,32 @@ When you open code in Xcode firstly you have to select target Run and select dev
 
 If complied successfully it means your local api is running. (When you stop app in xcode debug screen you will see exit 9 which means you local api has ben successfully stoped.)
 
+That api response as json also accept application/json. That local api main goal is to test your service code. You can create,get and delete user in this api. This api include a local database also. That means when you stop or close your app datas never has been lost. 
+
+```ruby
+import Foundation
+
+struct UserModelForVaporTest: Codable {
+    var id: UUID?
+    var name: String?
+    var surname: String?
+    var age: Int?
+}
+```
+
 ## End Points
 
+Your local Api adress = http://localhost:8080
 
+### Get End Points
 
+http://localhost:8080/user/ -> Returns all users saved on database. 
+http://localhost:8080/user/nameFilter/userName -> Returns all objects which name property is userName
+http://localhost:8080/user/nameFilterQuery?name=userName -> Returns all objects which name property is userName with param in query
 
+### Post End Points
+http://localhost:8080/user/ -> Create a new user. You will send user object as json.
+
+### Delete End Points
+http://localhost:8080/user/C41A7709-FADC-4F43-8F69-2A37A83B648A -> Delete object with UUID.
 
