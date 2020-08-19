@@ -54,8 +54,13 @@ When it complete generated open .xcodeproject file. Installation completed. You 
 
 When you open code in Xcode firstly you have to select target Run and select device My Mac. Than run app.
 
-<img src="https://github.com/ferhanakkan/LocalApi/blob/master/Sources/App/Models/Screen%20Shot%202020-08-19%20at%2007.28.11.png" width="400" height="200"/>
+<img src="https://github.com/ferhanakkan/LocalApi/blob/master/Sources/App/Models/Screen%20Shot%202020-08-19%20at%2007.28.11.png" width="1070" height="100"/>
 
 If complied successfully it means your local api is running. (When you stop app in xcode debug screen you will see exit 9 which means you local api has ben successfully stoped.)
 
 ## End Points
+
+
+
+
+
