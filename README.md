@@ -18,3 +18,36 @@
         <img src="http://img.shields.io/badge/swift-5.1-brightgreen.svg" alt="Swift 5.1">
     </a>
 </p>
+
+## Contents
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Requirements
+- iOS 12+
+- Swift 4+
+- Xcode 9.3+
+
+## Installation
+
+Firstly if you didn't use Vapor before please install vapor.
+
+```ruby
+brew tap vapor/tap
+brew install vapor/tap/vapor
+```
+
+After you did installation clone to your local machine or download source code as zip and extract to folder which you wish.
+
+And last step go to folder location in terminal and enter
+
+```ruby
+vapor xcode
+```
+
+When it complete generated open .xcodeproject file. Installation completed. You have to do that when did you download from github per one time.
+
+
+## Usage
