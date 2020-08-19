@@ -24,7 +24,7 @@
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [End Points](#end points)
+- [End Points](#endpoints)
 ## Requirements
 - iOS 12+
 - Swift 4+
