@@ -81,9 +81,9 @@ http://localhost:8080/user/ -> Returns all users saved on database. Returns [Use
 
 http://localhost:8080/user/{id} -> Return user in this id number. Returns UserModel as json.
 
-http://localhost:8080/user/nameFilter/ (Send name as parameter ([name: "blablaName"])) -> Returns all objects which name property is userName. Returns [UserModel] as json.
+http://localhost:8080/user/nameFilter/{userSurname} -> Returns all objects which name property is userName. Returns [UserModel] as json.
 
-http://localhost:8080/user/nameFilterQuery?name=userName -> Returns all objects which name property is userName with param in query. Returns [UserModel] as json.
+http://localhost:8080/user/nameFilterQuery?name=userSurame -> Returns all objects which name property is userSurame with param in query. Returns [UserModel] as json.
 
 ### Post End Points
 http://localhost:8080/user/ -> Create a new user. You will send user object as json. Returns UserModel as json.
