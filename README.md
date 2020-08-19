@@ -63,7 +63,7 @@ That api response as json also accept application/json. That local api main goal
 ```ruby
 import Foundation
 
-struct UserModelForVaporTest: Codable {
+struct UserModel: Codable {
     var id: UUID?
     var name: String?
     var surname: String?
@@ -78,7 +78,9 @@ Your local Api adress = http://localhost:8080
 ### Get End Points
 
 http://localhost:8080/user/ -> Returns all users saved on database. 
+
 http://localhost:8080/user/nameFilter/userName -> Returns all objects which name property is userName
+
 http://localhost:8080/user/nameFilterQuery?name=userName -> Returns all objects which name property is userName with param in query
 
 ### Post End Points
