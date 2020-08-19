@@ -64,7 +64,7 @@ That api response as json also accept application/json. That local api main goal
 import Foundation
 
 struct UserModel: Codable {
-    var id: UUID?
+    var id: UUID?  // You shouldn't give UUID to your model because when you post model without UUID api side will generate and register in database. Also in response we will send you model with UUID.
     var name: String?
     var surname: String?
     var age: Int?
@@ -77,15 +77,15 @@ Your local Api adress = http://localhost:8080
 
 ### Get End Points
 
-http://localhost:8080/user/ -> Returns all users saved on database. 
+http://localhost:8080/user/ -> Returns all users saved on database. Returns [UserModel] as json.
 
-http://localhost:8080/user/nameFilter/userName -> Returns all objects which name property is userName
+http://localhost:8080/user/nameFilter/userName -> Returns all objects which name property is userName. Returns [UserModel] as json.
 
-http://localhost:8080/user/nameFilterQuery?name=userName -> Returns all objects which name property is userName with param in query
+http://localhost:8080/user/nameFilterQuery?name=userName -> Returns all objects which name property is userName with param in query. Returns [UserModel] as json.
 
 ### Post End Points
-http://localhost:8080/user/ -> Create a new user. You will send user object as json.
+http://localhost:8080/user/ -> Create a new user. You will send user object as json. Returns UserModel as json.
 
 ### Delete End Points
-http://localhost:8080/user/C41A7709-FADC-4F43-8F69-2A37A83B648A -> Delete object with UUID.
+http://localhost:8080/user/C41A7709-FADC-4F43-8F69-2A37A83B648A -> Delete object with UUID.Returns UserModel as json.
 
